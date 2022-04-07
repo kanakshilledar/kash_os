@@ -23,6 +23,8 @@ pub extern "C" fn _start() -> ! {
     loop {}
 }
 
+mod vga_buffer;
+
 // function is called on panic
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
